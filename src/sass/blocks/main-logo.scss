@@ -1,0 +1,20 @@
+.main-logo {
+  display: block;
+  width: 45%;
+  max-width: 174px;
+  flex-shrink: 0;
+  line-height: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.main-logo--footer {
+  width: 174px;
+
+  @media #{$mobile-width--sm} {
+    margin-top: 15px;
+  }
+
+}

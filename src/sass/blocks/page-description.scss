@@ -1,0 +1,12 @@
+.page-description {
+  margin-bottom: 30px;
+  padding-right: 15px;
+  font-weight: 300;
+  color: $color-secondary;
+  font-size: 15px;
+  line-height: 1.4em;
+
+  @media #{$tablet-width--xs}{
+    padding: 0 15px;
+  }
+}

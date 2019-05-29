@@ -1,0 +1,127 @@
+.subcategory-item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding: 20px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  transition: all 0.2s;
+
+  @media #{$desktop-width-sm} {
+    padding: 20px 10px;
+  }
+
+  @media #{$tablet-width--md} {
+    width: 33.333%;
+    padding: 20px 15px;
+  }
+
+  @media #{$tablet-width--sm} {
+    width: 50%;
+  }
+
+  @media #{$tablet-width--xs}{
+    width: 33.333%;
+    padding: 20px 10px;
+  }
+
+  @media #{$mobile-width--md} {
+    width: 50%;
+  }
+
+
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 0 30px 2px #e8e8e8;
+  }
+
+  .btns-inner {
+    text-align: center;
+  }
+}
+
+.subcategory-item__pic {
+  margin-bottom: 30px;
+  line-height: 0;
+  text-align: center;
+
+  &:hover {
+
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  img {
+    max-width: 100%;
+    margin: auto;
+    transition: all 0.4s;
+  }
+}
+
+.subcategory-item__code {
+  margin-bottom: 12px;
+  color: $text-gray;
+  font-size: 11px;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.subcategory-item__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.2em;
+  flex-grow: 1;
+}
+
+.subcategory-item__link {
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.subcategory-item__price {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  align-items: center;
+
+  @media #{$tablet-width--md} {
+    justify-content: center;
+  }
+
+  @media #{$mobile-width--sm} {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+.subcategory-item__newprice {
+  color: $color-third;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.2em;
+  margin-right: 12px;
+}
+
+.subcategory-item__oldprice {
+  color: $text-gray;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-decoration: line-through;
+
+  @media #{$mobile-width--sm} {
+    margin-bottom: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+.main-slider {
+  position: relative;
+  margin-bottom: 30px !important;
+
+  @media #{$mobile-width--sm} {
+    margin-bottom: 0 !important;
+  }
+
+  .slick-list {
+    line-height: 0;
+  }
+}
+
+.main-slider__item {
+
+  a {
+    text-decoration: none;
+    line-height: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

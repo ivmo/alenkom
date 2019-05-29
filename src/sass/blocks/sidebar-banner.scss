@@ -1,0 +1,18 @@
+.sidebar-banner {
+  margin-bottom: 7px;
+  box-shadow: 0 0 15px 1px #ddd;
+  background: #fff;
+
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.form-group {
+  position:relative;
+
+  & + .form-group {
+    margin-top: 10px;
+  }
+}
+
+.form-group__label {
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  color: #787878;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  cursor: text;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.focused .form-group__label {
+  transform: translateY(-125%);
+  font-size: .75em;
+  font-style: normal;
+}
+
+.form-group__input {
+  width: 100%;
+  padding: 16px 18px;
+  background: #fff;
+  box-shadow: 0 0 5px 1px $gray-lighten;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}

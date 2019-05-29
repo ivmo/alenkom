@@ -1,0 +1,29 @@
+.features {
+  margin-bottom: 50px;
+
+  @media #{$tablet-width--xs} {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+}
+
+.features__title {
+  margin-top: 25px;
+  margin-bottom: 70px;
+  font-size: 30px;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-secondary;
+  font-weight: 300;
+
+  @media #{$tablet-width--xs} {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  b {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,10 @@
+.sidebar {
+  width: 272px;
+  margin-right: 30px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+
+  @media #{$tablet-width--xs} {
+    display: none;
+  }
+}
